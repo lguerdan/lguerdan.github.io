@@ -2,8 +2,8 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: You R. Name
-email: you@example.com
+title: Luke Guerdan
+email: lguerdan97@gmail.com
 description: > # this means to ignore newlines until "url:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
@@ -12,7 +12,7 @@ footer_text: >
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 
 url:  # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/
+baseurl:  # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 
 # -----------------------------------------------------------------------------
@@ -56,8 +56,9 @@ google_analytics: UA-XXXXXXXXX # out your google-analytics code
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio  # your blog must have a name for it to show up in the nav bar
-blog_description: a simple whitespace theme for academics
+blog_name: Fitzcarraldo (n.)
+blog_description: An image that somehow becomes lodged deep in your brain—maybe washed there by a dream, or smuggled inside a book, or planted during a casual conversation—which then grows into a wild and impractical vision that keeps scrambling back and forth in your head like a dog stuck in a car that’s about to arrive home, just itching for a chance to leap headlong into reality.
+blog_attribution: The Dictionary of Obscure Sorrows
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -65,7 +66,7 @@ pagination:
   enabled: true
 
 # Comments
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: # put your disqus shortname
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -120,7 +121,7 @@ plugins:
 
 scholar:
 
-  last_name: Einstein
+  last_name: Guerdan
 
   style: apa
   locale: en
