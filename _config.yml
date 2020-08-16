@@ -3,7 +3,7 @@
 # -----------------------------------------------------------------------------
 
 title: Luke Guerdan
-email: lguerdan97@gmail.com
+email:
 description: > # this means to ignore newlines until "url:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
@@ -48,7 +48,7 @@ research_gate_profile: # your profile on ResearchGate
 blogger_url: # your blogger URL
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Feel free to shoot me an email at lguerdan97 [at] gmail [dot] com to get in touch!
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 
@@ -56,9 +56,9 @@ google_analytics: UA-XXXXXXXXX # out your google-analytics code
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Fitzcarraldo (n.)
-blog_description: An image that somehow becomes lodged deep in your brain—maybe washed there by a dream, or smuggled inside a book, or planted during a casual conversation—which then grows into a wild and impractical vision that keeps scrambling back and forth in your head like a dog stuck in a car that’s about to arrive home, just itching for a chance to leap headlong into reality.
-blog_attribution: The Dictionary of Obscure Sorrows
+blog_name:
+blog_description:
+blog_attribution:
 permalink: /blog/:year/:title/
 
 # Pagination

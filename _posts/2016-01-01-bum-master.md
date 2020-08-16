@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Bum Master - Experiments in Agile Living
-description: "This is my odd foray into the world of optimized self improvement — a glimpse of what happens when agile software methodology meets an old New Year’s resolution gone too far."
+description: "This is my foray into the world of optimized self improvement — a glimpse of what happens when agile software methodology meets an old New Year’s resolution gone too far."
 modified: 2016-01-01
 tags: [Agile, Scrum, Experiments]
 image:
@@ -37,14 +37,18 @@ This is where the magic happens. In scrum, the stand-up meeting is a brief check
 - What will I do today?
 - What obstacles are impeding my progress?
 
-So, I decided to give it a shot too! Each morning, all year, I took a look at the goals from step one and decided on a few measurable actions to evaluate my progress in that area. Did I wan’t to nail my first goal for that day? Then I would need to be present during conversations with family. How about curiosity? Maybe that meant googling random tidbits of information a professor mentioned in class.
+So, I decided to give it a shot too! Each morning, all year, I took a look at the goals from step one and decided on a few measurable actions to evaluate my progress in that area. Did I want to nail my first goal for that day? Then I would need to be present during conversations with family. How about curiosity? Maybe that meant googling random tidbits of information a professor mentioned in class.
 
 If I was hitting a slump, I would just consider which obstacles were reducing my performance — usually lack of sleep or distraction.
 
 The trick for me was to decide specific criteria of measuring my performance that day. I would then evaluate my successes at the beginning of the next stand-up based on those criteria. The most invigorating aspect of this process? It fostered one of my favorite aspects of scrum — Kaizen.
 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0 margin-bottom">
+        <img class="img-fluid rounded z-depth-1" src="{{site.baseurl}}/assets/img/bm1.png">
+    </div>
+</div>
 
-![Picture description]({{site.baseurl}}/assets/img/bm1.png){: .image-left }
 
 Commonly translated as incremental improvement, Kaizen is a Japanese phrase popularized by Masaaki Imai’s book Kaizen: The Key to Japan’s Competitive Success.
 Improvement is wonderful in organizations, but I found it even more fun personally. Trying to do better each day was addicting. It gave the freedom to care less about my G.P.A, less about landing a top tier summer internship, and care more about quality of life. Instead of external outcomes, it was the internal effort that mattered.
@@ -54,9 +58,13 @@ None of that would have happened without accountability.
 While implementing scrum, teams are constantly in contact with the stake holder. The stakeholder could be the end customer, or it could be the business owner, sales department, or even the scrum team itself. The scrum master is a facilitator of sorts — the person “in charge”. This past year, I was the sake holder, the team, and the person responsible for the process itself. I was the bum master.
 
 In order to keep myself in line and accountable, I appealed to the nerdy C.S. student inside: aggressive spreadsheeting.
-<figure>
-   <a><img src="{{site.baseurl}}/assets/img/bm2.png" alt=""></a>
-</figure>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0 margin-bottom">
+        <img class="img-fluid rounded z-depth-1" src="{{site.baseurl}}/assets/img/bm2.png">
+    </div>
+</div>
+
 For every week, a goal occupied a row, and each day occupied a column. Pretty basic stuff. I used the day score row to get an idea of how well the day went overall, with 50 being average. Cooler yet, I could compare how well I did in each area at the end of the week.
 
 Assigning a score to each goal during stand-ups got hairy at times. For example, what distinguishes a six from a seven? Which behaviors qualify as a five, as opposed to higher or lower? Ultimately I decided to not allow more than two fives each day. Everything can’t be average, right? I also decided to apply a mental curve on the whole thing — 1’s and 10’s were really hard to get.
@@ -67,13 +75,12 @@ I wanted to design a system to encourage a little improvement each day, and make
 Once the weekly process was developed, repeating it by week and month fell into place. I played with adopting a sprint technique, which added a weekly reflection to the daily stand-ups. It was with mixed results. Looking at an entire week’s progress aided reflection, but it also distracted me from focusing on the next day. Plus I was lazy (shh.. don’t tell the bum master).
 
 I slaved away at a few other spreadsheets tracking the weeks and months. Those weren’t too interesting, so instead I’ll share this:
+
 <div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm mt-3 mt-md-0 margin-bottom">
         <img class="img-fluid rounded z-depth-1" src="{{site.baseurl}}/assets/img/bm3.png">
     </div>
-    </br>
 </div>
-
 
 This a flowy, colorful breakdown of the years ratings. As you might see, I didn’t adopt the two 5’s rule until March, leaving the first few months bound together tightly. My work ethic was fantastic during June. Compassion also looks like an area for improvement this year. Honestly — I don’t know how much I can read into it other than basic observations like those.
 

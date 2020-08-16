@@ -129,8 +129,6 @@ update['fatigue'] = (power_updates['theta'] + power_updates['alpha']) / power_up
 
 But, you may be thinking, there is an issue. In fact, there is no guarantee that these values will range within zero to one, or any fixed interval for that matter. 
 
-$$ E = mc^2 $$.
-
 This is important to address since we’ll need a number, say from zero to one, which reflects the mental state we are interested in. We could use min-max standardization such that:
 
 $$
@@ -168,14 +166,17 @@ Before we talk about that though, you may be wondering: does this actually work?
 
 Here are the results we get:
 
-<figure>
-   <a><img class="partial" src="{{site.baseurl}}/assets/img/MUSE-alpha.png" alt=""></a>
-</figure>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0 margin-bottom">
+        <img class="img-fluid rounded z-depth-1" src="{{site.baseurl}}/assets/img/MUSE-alpha.png">
+    </div>
+</div>
 
-
-<figure>
-   <a><img class="partial" src="{{site.baseurl}}/assets/img/MUSE-beta.png" alt=""></a>
-</figure>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0 margin-bottom">
+        <img class="img-fluid rounded z-depth-1" src="{{site.baseurl}}/assets/img/MUSE-beta.png">
+    </div>
+</div>
 
 As you can see, the alpha protocol turned out to work quite nicely, while the beta was less-robust. Clearly, this one session is can't be used to establish anything conclusively, but it at least gives us some assurance that the general approach works. Now that we have a functional metric, we can move on to creating interactive environments. 
 
@@ -188,9 +189,7 @@ I won’t go into any depth about how to create an environment, that is for your
 Breakpoint is a programming environment that alerts coders when they are too fatigued to productively code using the fatigue protocol discussed above. The idea is that once fatigue values surpass a threshold for long enough, the programmer gets a notification to take a break. There are plenty of bells and whistles here of questionable utility–but they are pretty cool none-the-less. This [project](https://devpost.com/software/breakpoint) was a hackathon project completed at the Swiss competition, StartHack. 
 
 <figure>
-    <iframe width="110%" height="450px"
-    src="https://www.youtube.com/embed/E6B0vKlPEcg">
-    </iframe>
+    <iframe src="https://drive.google.com/file/d/1O7BezuDII7zz-WxmySdFyhCSLGG2dXMX/preview" width="110%" height="450px"></iframe>
 </figure>
 
 
@@ -199,16 +198,17 @@ Breakpoint is a programming environment that alerts coders when they are too fat
 Zenvironment pipes the relaxation value calculated from the alpha protocol into a hue lighting system and sound environment, creating surroundings which ebb and flow based on feelings of calmness. This demo also includes a movement component, which is included as a baseline measure to visualize responsiveness. This project was done as part of my capstone course. 
 
 <figure>
-    <iframe width="110%" height="450px"
-    src="https://www.youtube.com/embed/8866FDWSnXg">
-    </iframe>
+    <iframe src="https://drive.google.com/file/d/1Z4kEgxC6jXGfJOYlxh7OeO-3VJ72wgWW/preview" width="110%" height="450px"></iframe>
 </figure>
 
 Interestingly, we can also see a concrete way of mapping the relaxation metric to lighting values based on a nonlinear function. The precise function used is up to you, but one that we found works well is: 
 
-<figure>
-   <a><img class="partial" src="{{site.baseurl}}/assets/img/lights.png" alt=""></a>
-</figure>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0 margin-bottom">
+        <img class="img-fluid rounded z-depth-1" src="{{site.baseurl}}/assets/img/lights.png">
+    </div>
+</div>
+
 
 ## Wrapping up
 

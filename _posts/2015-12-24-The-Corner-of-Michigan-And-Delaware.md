@@ -13,7 +13,7 @@ Some people were blown over by the wind. They lay hunched in alleys and byways, 
 
 Others walked out on the boardwalk and they braved the howling wind. In an attempt to find refuge they hoisted themselves over the rails and threw themselves into the tempest. Releasing parachutes they were blown away — somewhere high among the ramparts and pinnacles looming above the shore.
 
-And as they landed in the towering spikes and spires which staccatod the skyline, they lived glamorous lives shielded from the blow.
+And as they landed in the towering spikes and spires which staccatoed the skyline, they lived glamorous lives shielded from the blow.
 
 But most — they just wanted to stay warm. They paced in a quickened frenzy between destinations at no particular time and for no particular reason. Passing one another, they lowered their anemic glances, afraid to feel the cold breeze of others’ cold phantom wake.
 

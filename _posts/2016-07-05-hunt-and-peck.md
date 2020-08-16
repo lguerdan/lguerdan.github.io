@@ -10,7 +10,8 @@ image:
 
 It was day one of programming class: enter Vim, the commend-line, C code, and last but not least, hunt-and-peck typing. It was a recipe for disaster — inspiring none other than this dystopian parody of Eminem’s Lose Yourself:
 
->Look, if you had, one shot, or one [lab]
+```
+Look, if you had, one shot, or one [lab]
 To seize [all the points] you ever wanted. In one moment
 Would you capture it, or just let it slip?
 Yo
@@ -22,6 +23,7 @@ The whole [keyboards of other students] go so loud
 He opens [the editor], but the words won’t [type] out
 He’s choking how, everybody’s [submitting] now
 The clock’s run out, time’s up, over, blaow!
+```
 
 And it was at that moment during the first day of lab that I realized being the owner of two bundles of floppy noodle fingers wouldn’t do. Instead, I envisioned myself as an industrious German secretary — effortlessly hammering out a euphony of text at 100 words per minute.
 
@@ -33,10 +35,15 @@ The first step towards becoming an enlightened hunt-and-pecker was picking the b
 Coining itself as the best way to “learn typing at the speed of thought”, Keybr has some pimped out features. The interactive dashboard presents new letters one at a time, forcing “mastery” of the previous ones before new are presented. It even breaks down response time by letter each sample set.
 
 The words (or pseudo-words) are also constructed based off of the natural statistical patterns in common text, encouraging muscle memory of common finger movements. Much to my dismay, the interface continues to present the letter lowest in accuracy until it gets back up to par with the others.
-<figure>
-   <a><img src="{{site.url}}/assets/img/ehp2.png" alt=""></a>
-      <figcaption>Typing interface used to practice and provide feedback.</figcaption>
-</figure>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0 margin-bottom center">
+        <img class="img-fluid rounded z-depth-1" src="{{site.url}}/assets/img/ehp2.png">
+    </div>
+</div>
+<div class="caption">
+    Typing interface used to practice and provide feedback.
+</div>
 
 I’ll dissect the interface more below and talk about how it benefited (or didn’t) the learning process. For the most part, the free software made for a homey training ground — a paradise industrious German secretaries only dream of.
 
@@ -45,10 +52,16 @@ I’ll dissect the interface more below and talk about how it benefited (or didn
 Once I was all situated, it was time for a typing montage. Far from an aspiring aficionado ruthlessly training away for hours at a time, I usually just typed for a few minutes a day. It became a favorite procrastination tool, and may be more addicting than Flappy Bird.
 
 After a few hours of typing practice, I decided to make my 100 word-per-minute goal more realistic, reducing it to simply teasing all the letters out of Keybr’s mastery-oriented interface. Although I imagined the process being quick and simple, it was more tricky.
-<figure>
-   <a><img src="{{site.url}}/assets/img/ehp4.png" alt=""></a>
-      <figcaption>Smoothed scatter plot of typing speed and accuracy — provided by Keybr.</figcaption>
-</figure>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0 margin-bottom center">
+        <img class="img-fluid rounded z-depth-1" src="{{site.url}}/assets/img/ehp4.png">
+    </div>
+</div>
+<div class="caption">
+    Smoothed scatter plot of typing speed and accuracy — provided by Keybr
+</div>
+
 As you can see, learning was more like trudging up a mountain than taking an elevator — especially because learning how to type required abandoning my hunt-and-peck ways. When it came time to write a paper or program, I had to revert back to chugging along until I learned most of the letters the correct way,
 
 As the hours drifted past and my motivation waned, I began to wonder: is the process of learning typing fixed, or is there a way to increase typing speed more quickly? This lead to some exploration of the Keybr page.
@@ -58,10 +71,15 @@ As the hours drifted past and my motivation waned, I began to wonder: is the pro
 Around twenty hours into the voyage, I stumbled into a trove of gold — a complete record of the data used to change the letter of focus and display progress. This meant that, in addition to the pretty graphics provided by Keybr, I could generate my own to explore the learning process. I was particularly interested in the reason some letters quickly became etched into muscle memory, while others drug on for ages.
 
 Although the data portal didn’t provide letter correlations or a miss-hit-ratio, it was easy to derive with the downloaded data using Python. The code used to convert the raw data to JSON and generate the plots is on this [Github repository](https://github.com/lguerdan/type-training), feel free to take a gander if you’re feeling curious. Using the code, I was able to generate a correlation matrix which breaks down the comparison between response time of each letter. The closer to red, the more the two letters match in average response time across the training.
-<figure>
-   <a><img src="{{site.url}}/assets/img/ehp5.png" alt=""></a>
-   <figcaption><a title="Correlation matrix of low response time between letters."> Correlation matrix of low response time between letters.</a></figcaption>
-</figure>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0 margin-bottom center">
+        <img class="img-fluid rounded z-depth-1" src="{{site.url}}/assets/img/ehp5.png">
+    </div>
+</div>
+<div class="caption">
+    Correlation matrix of low response time between letters.
+</div>
 
 ### Some interesting observations:
 
