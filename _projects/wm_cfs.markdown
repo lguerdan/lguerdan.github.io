@@ -8,7 +8,7 @@ importance: 1
 
 During fall of 2018 and spring of 2019, I did my Psychology Honors Thesis under [Dr. Steven Hackley](https://psychology.missouri.edu/people/hackley) at the University of Missouri. Here is an excerpt from the poster I presented about the project at the [Midwestern Psychological Association Conference](http://midwesternpsych.org/) in April 2019. Special thanks to Dr. Hackley, Dr. Underwood, and others in the [Clinical and Cognitive Neuroscience Laboratory](http://faculty.missouri.edu/hackleys/) who made this a fantastic experience. 
 
-Feel free to read my [full thesis here]({{site.baseurl}}/assets/pdf/Guerdan_WM_CFS_Thesis.pdf){:target="_blank"}. 
+Feel free to read my [full thesis here]({{site.baseurl}}/assets/pdf/wm-cfs-2019-thesis.pdf){:target="_blank"}. 
 
 # Introduction
 The conventional understanding of working memory (WM) holds that memory contents are tied closely with conscious awareness. However, recent work in unconscious visual perception suggests that unconsciously perceived items may also be stored in WM (Pan et. al., 2014). The purpose of this study was to extend these findings by establishing whether unconscious items held in WM also demand WM capacity. It was hypothesized that participants would be less accurate at a change detection task when more unconscious memory items were present. 

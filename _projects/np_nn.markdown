@@ -11,5 +11,5 @@ For a class project in my graduate level neural networks class in spring of 2019
 See the code for this implementation and several experiments [here](https://github.com/lguerdan/numpy-CNN), and my project report below. Note that the deconvolution demonstration at the end of the report has an issue that still needs to be fixed. 
 
 <div>
-  <iframe src="{{site.baseurl}}/assets/pdf/np_nn.pdf" width="100%" height="800px"></iframe>
+  <iframe src="{{site.baseurl}}/assets/pdf/np-nn-2019-report.pdf" width="100%" height="800px"></iframe>
 </div>

@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: publications by categories in reversed chronological order. * denotes equal contribution
+description: (* denotes equal contribution)
 years: [2019, 2018, 2017, 2016]
 nav: true
 ---

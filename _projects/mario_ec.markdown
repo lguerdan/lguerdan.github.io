@@ -468,5 +468,5 @@ optimizer2.save_optimizer('mario-4-chromosome2.p') #save to an updated file
 {% endhighlight %}
 
 
-My teammates then extended this environment to examine different evolutionary computation simulations. See our [poster here]({{site.baseurl}}/assets/pdf/mario_ec_poster.pdf){:target="_blank"} for more information about these aspects of the project!
+My teammates then extended this environment to examine different evolutionary computation simulations. See our [poster here]({{site.baseurl}}/assets/pdf/mario-ec-2018-poster .pdf){:target="_blank"} for more information about these aspects of the project!
 
