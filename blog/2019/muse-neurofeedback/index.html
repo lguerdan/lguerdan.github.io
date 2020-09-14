@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Luke Guerdan | How to Decode Mental States With a Commercial EEG Headband</title>
+<meta name="description" content="An academic homepage with information about my projects, blog, and publications.
+">
+
+<!-- Bootstrap & MDB -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.17.0/css/mdb.min.css" integrity="sha256-/SwJ2GDcEt5382i8zqDwl36VJGECxEoIcBIuoLmLR4g=" crossorigin="anonymous" />
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"  integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- Styles -->
+<link rel="shortcut icon" href="/assets/img/favicon.ico">
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<link rel="canonical" href="/blog/2019/muse-neurofeedback/">
+
+<!-- Open Graph -->
+
+
+  </head>
+
+  <body class="fixed-top-nav sticky-bottom-footer">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light bg-white navbar-expand-sm fixed-top">
+    <div class="container">
+      
+      
+      
+      
+      
+      <a class="navbar-brand title font-weight-lighter" href="/">
+       <span class="font-weight-bold">Luke</span>   Guerdan
+      </a>
+      
+      <!-- Navbar Toogle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              about
+              
+            </a>
+          </li>
+          
+          <!-- Blog -->
+          <li class="nav-item active">
+            <a class="nav-link" href="/blog/">
+              blog
+              
+            </a>
+          </li>
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/projects/">
+                projects
+                
+              </a>
+          </li>
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/publications/">
+                publications
+                
+              </a>
+          </li>
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/assets/pdf/LukeGuerdanCV.pdf" target="_">
+              CV
+            </a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">How to Decode Mental States With a Commercial EEG Headband</h1>
+    <p class="post-meta">May 20, 2019</p>
+  </header>
+
+  <article class="post-content">
+    <p>Wearable devices are becoming more and more common, giving us access to an unprecedented amount of real-time physiological data. These wearables are useful for tracking things like activity levels and exercise, but we can also use them for much more powerful applications.</p>
+
+<p>Take for example wearable <a href="https://en.wikipedia.org/wiki/Electroencephalography">electroencephalography</a> (EEG) headbands. These devices give direct access to a high level overview of the brain’s electrical activity–an “outside of the ballpark” view of what is going on in the mind. Though we might not be able to decode thoughts with a few dry electrodes, we can get a sense of global states such relaxation, alertness, or fatigue. What if we could take it one step further and create environments which respond interactively to how we are feeling? This is similar to the paradigm is often referred to as neurofeedback, which has many potential applications.</p>
+
+<p>Today we will use a <a href="https://choosemuse.com/">Muse headband</a>–one of the most common and easily accessible EEG headsets–to create two types of interactive environments. I will show you:</p>
+
+<ol>
+  <li>How to decode mental signals recorded using the Muse headband</li>
+  <li>Different ways of making use of these signals in an interactive environment</li>
+</ol>
+
+<p>The environment aspect of this can get complicated–but I will show a few examples of how the signals can be applied without diving into environments’ implementation details.</p>
+
+<h2 id="a-basic-mental-state-decoding-algorithm">A basic mental state decoding algorithm</h2>
+
+<h4 id="connecting-with-the-muse">Connecting with the MUSE</h4>
+
+<p>So you have access to a Muse headband? Great! The first thing we need to do is get a connection up and running. The exact process of achieving this will depend on the <a href="https://www.youtube.com/watch?v=cPz19fmD620">version of headband that you have</a>. If you have a 2014 Muse headband, you can connect this device to your laptop via an OSC stream, which is <a href="http://developer.choosemuse.com/research-tools-example/grabbing-data-from-museio-a-few-simple-examples-of-muse-osc-servers">supported by Muse</a> out of the box . If you have a Muse 2016 headband, this gets more tricky, since this device connects using Bluetooth low energy, which isn’t supported directly by most laptop computers. <a href="https://github.com/alexandrebarachant/muse-lsl">MuseLSL</a> is a good option for connecting with a Muse 2016 headband. Note that the authors also include a <a href="https://github.com/alexandrebarachant/muse-lsl/blob/master/examples/neurofeedback.py">nifty neurofeedback script</a> that will implement most of what I talk about here.</p>
+
+<p>Regardless of the method you use, I’ll assume that you now have a Python script reading in values that the headband emits in real time, either using MuseLSL with the 2016 headband or a sample script provided by the Muse developers for the 2014 headband (sorry, I haven’t worked with Muse 2 yet, so don’t have any instructions for that device).</p>
+
+<h4 id="decoding-signals-from-eeg">Decoding signals from EEG</h4>
+
+<p>Now that we have real time EEG signals, there are a few different options for how to decode them. One option is to build out a <a href="https://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-algorithms/">supervised machine learning model</a> and use that to classify mental states categorically or predict the value within a continuous range. Though this could work, there are a few reasons why it is a pain:</p>
+
+<ol>
+  <li>
+    <p>Labels. At the end of the day, any supervised model will need ground truth labels–and lots of them–to build a mapping from the electrical activity to the higher-level mental activity. Having lots of time-locked and continuous labels can be tricky and a lot of work. Now, you may think, there are <a href="https://github.com/meagmohit/EEG-Datasets">plenty of datasets</a> I can already use to train a model, why not use one of those?</p>
+  </li>
+  <li>
+    <p>Variability. When it comes to complex signals like EEG, there is a large amount of variability depending on the person and session, meaning that it is hard to achieve high accuracy on a new person or session if training does not match that context.</p>
+  </li>
+</ol>
+
+<p>If you can overcome both of these challenges, you may get stellar performance and an awesome decoding algorithm. Alas, there are other methods that require much less upfront work.</p>
+
+<h3 id="frequency-based-decoding">Frequency-based decoding</h3>
+
+<p>You may remember me mention that EEG is based on electrical activity in the brain–electrical activity which consists of many different frequencies combined together. It turns out that different frequencies are indicative of different mental phenomena. Not only is this frequency mapping robust across people, it is also consistent across time: a perfect phenomenon to use in our basic mental state decoding algorithm.</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0 margin-bottom">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/frequencies.jpg" />
+    </div>
+</div>
+<div class="caption">
+    Image credit: Pierre Raymond Esteve; Wikipedia Commons
+</div>
+
+<p>This chart shows a decomposition of the overall electrical activity (top), into its constituent frequency bands. The bottom chart shows these bands on the x axis, along with their respective band power on the y axis. It turns out that lower frequencies (\(\theta, \alpha\)) tend to be associated with states of sleep or relaxation, while higher frequencies (\(\beta\)) are involved with cognitive tasks. By looking at single frequency bands–or combinations of frequency bands–we can get an idea of a person’s mental state. Here are a few recipes for useful frequency ranges/combinations. These metrics are based on band power, or strength of the signal, in the frequency range of interest. Note several of these are courtesy of the MuseLSL neurofeedback script.</p>
+
+<p><strong>Alpha band power:</strong> This method simply returns the \(\alpha\) band power, which is an index of degree of relaxation. Here, higher alpha means more relaxation, and possibly fatigue.</p>
+
+<p><strong>Beta Protocol:</strong> This is a broad index of mental activity/concentration, and is defined as \(\beta / \theta\) band power. Higher beta can be interpreted as more concentration.</p>
+
+<p><strong>Fatigue:</strong> This <a href="https://www.ncbi.nlm.nih.gov/pubmed/24621009">method captures degree of fatigue</a>, and is calculated as \((\theta + \alpha) / \beta\). An increase in this metric reflects more fatigue.</p>
+
+<p>These metrics are easy and simple to compute, meaning that they are great options for our simple mental state decoding algorithm. Now that we have a conceptual understanding, it’s time to turn our attention to implementing it. I will discuss the process generally while also including code snippits based on a 2014 headband connection. To get a full picture of how the code is working, see <a href="https://github.com/lguerdan/Muse-neural-feedback">here</a>. At a high level, given our continuously streaming EEG data, we want to output a numerical estimate of our above measures (a number between zero to one, for example). Here are some simple steps to achieve this.</p>
+
+<h4 id="buffering-the-signal">Buffering the signal</h4>
+
+<p>The <a href="http://forum.choosemuse.com/t/sampling-rate/778">sampling rate of the Muse</a> headband can vary, but regardless we will need a way to buffer incoming data so that we can compute frequency bands on the incoming signal. A longer data buffer will make our environment less responsive, but will also make our analysis more robust when it comes time to average the signal. Selecting overlapping buffers can help keep the environment responsive while also keeping a long enough window to average over. Incoming data can easily be stored in a Python NumPy array as the buffer.</p>
+
+<h4 id="computing-spectral-powers">Computing spectral powers</h4>
+
+<p>Once we have buffered data, we need to compute power spectra. Though we could do this using a fast Fourier transform, Muse provides real-time computed estimates of all the band powers we will need. Make sure to use the absolute band powers if you use the Muse-provided calculations, as the relative will give each frequency band power as a proportion of the total across the full full range.</p>
+
+<p>Note that if you opt to use the Muse-computed spectral powers, steps 1 and 2 can be combined by simply buffering the provided frequency estimates.</p>
+
+<p>We can set up a buffer to track incoming data by:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">NeuroFeedback</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="s">"""Code to compute basic neurofeedback measures"""</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">bufferWindowSize</span><span class="p">,</span> <span class="n">minMaxWindowSize</span><span class="p">,</span>  <span class="n">out_q</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">bufferWindowSize</span> <span class="o">=</span> <span class="n">bufferWindowSize</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">minMaxWindowSize</span> <span class="o">=</span> <span class="n">minMaxWindowSize</span>
+
+        <span class="c1">#Create buffer to average down high frequency updates that looks bufferWindowSize into the past
+</span>        <span class="n">keys</span> <span class="o">=</span> <span class="p">[</span><span class="s">'alpha'</span><span class="p">,</span> <span class="s">'delta'</span><span class="p">,</span> <span class="s">'beta'</span><span class="p">,</span> <span class="s">'theta'</span><span class="p">]</span>
+        <span class="n">update_keys</span> <span class="o">=</span> <span class="p">[</span><span class="s">'alpha-relaxation'</span><span class="p">,</span> <span class="s">'beta-concentration'</span><span class="p">,</span> <span class="s">'fatigue'</span><span class="p">]</span>
+
+        <span class="bp">self</span><span class="p">.</span><span class="n">abs_spectrum_powers</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">keys</span><span class="p">,</span> <span class="p">[</span><span class="n">np</span><span class="p">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">keys</span><span class="p">))]))</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">buffer_spectrum_ixs</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">keys</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">keys</span><span class="p">)))</span>
+
+        <span class="c1">#Create buffer for rolling min-max storage that looks minMaxWindowSize into the past
+</span>        <span class="bp">self</span><span class="p">.</span><span class="n">rolling_min_maxs</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">update_keys</span><span class="p">,</span> <span class="p">[</span><span class="n">np</span><span class="p">.</span><span class="n">zeros</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">minMaxWindowSize</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">keys</span><span class="p">))]))</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">rolling_min_max_ixs</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">update_keys</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">keys</span><span class="p">)))</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Then, each time an async OSC update fires, populating the buffer with the most recently received value:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="k">def</span> <span class="nf">abs_frequency_update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">spectrum</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+   <span class="bp">self</span><span class="p">.</span><span class="n">abs_spectrum_powers</span><span class="p">[</span><span class="n">spectrum</span><span class="p">][</span><span class="bp">self</span><span class="p">.</span><span class="n">buffer_spectrum_ixs</span><span class="p">[</span><span class="n">spectrum</span><span class="p">]]</span> <span class="o">=</span> <span class="n">value</span> 
+   <span class="bp">self</span><span class="p">.</span><span class="n">buffer_spectrum_ixs</span><span class="p">[</span><span class="n">spectrum</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h4 id="averaging">Averaging</h4>
+
+<p>Now that we have a buffer of values for each frequency range, it is helpful to average over our buffer. This makes our algorithm robust to noise over the interval to give us a more accurate estimate of band power during this time period.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="k">def</span> <span class="nf">compute_power_updates</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+   <span class="s">'''Take average over the cached buffer'''</span>
+   <span class="n">power_updates</span> <span class="o">=</span> <span class="p">{}</span> 
+   <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">.</span><span class="n">buffer_spectrum_ixs</span><span class="p">.</span><span class="n">keys</span><span class="p">():</span>
+      <span class="n">power_updates</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nb">sum</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">abs_spectrum_powers</span><span class="p">[</span><span class="n">key</span><span class="p">])</span> <span class="o">/</span>\
+            <span class="n">np</span><span class="p">.</span><span class="n">count_nonzero</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">abs_spectrum_powers</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
+
+      <span class="bp">self</span><span class="p">.</span><span class="n">buffer_spectrum_ixs</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+      <span class="bp">self</span><span class="p">.</span><span class="n">abs_spectrum_powers</span><span class="p">[</span><span class="n">key</span><span class="p">].</span><span class="n">fill</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+   
+   <span class="k">return</span> <span class="n">power_updates</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h4 id="computing-the-mental-state-metrics">Computing the mental state metrics</h4>
+
+<p>Now it is time to compute the actual neurofeedback metrics we talked about above–a matter of simple arithmetic according to the equations. Voila–we now have a number corresponding to relaxation, concentration, and fatigue!</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="n">update</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">update</span><span class="p">[</span><span class="s">'alpha-relaxation'</span><span class="p">]</span> <span class="o">=</span> <span class="n">power_updates</span><span class="p">[</span><span class="s">'alpha'</span><span class="p">]</span> 
+<span class="n">update</span><span class="p">[</span><span class="s">'beta-concentration'</span><span class="p">]</span> <span class="o">=</span> <span class="n">power_updates</span><span class="p">[</span><span class="s">'beta'</span><span class="p">]</span> <span class="o">/</span> <span class="n">power_updates</span><span class="p">[</span><span class="s">'theta'</span><span class="p">]</span>
+<span class="n">update</span><span class="p">[</span><span class="s">'fatigue'</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">power_updates</span><span class="p">[</span><span class="s">'theta'</span><span class="p">]</span> <span class="o">+</span> <span class="n">power_updates</span><span class="p">[</span><span class="s">'alpha'</span><span class="p">])</span> <span class="o">/</span> <span class="n">power_updates</span><span class="p">[</span><span class="s">'beta'</span><span class="p">]</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>But, you may be thinking, there is an issue. In fact, there is no guarantee that these values will range within zero to one, or any fixed interval for that matter.</p>
+
+<p>This is important to address since we’ll need a number, say from zero to one, which reflects the mental state we are interested in. We could use min-max standardization such that:</p>
+
+\[z_i=\frac{x_i-\min(x)}{\max(x)-\min(x)}\]
+
+<p>which would work, but also poses a problem. Specifically, we can’t know the minimum and maximum values we are going to observe ahead of time. Even if we could know these values, we don’t necessarily want to use them. This is because though we could guarantee that our metrics will fit in a standardized range, they may not actually vary much. We could set our minimum and maximum values based on the most and least relaxed we could possibly be, but most of the time we won’t be in that area, our metrics will float around \(.5\). If our values are normally distributed, this becomes especially problematic.</p>
+
+<p>The real issue arises when we try to pipe our number into an environment–say lights. We would find ourselves in a situation where the lights are not actually changing much in response to changes in mental state.</p>
+
+<p>Though this is a tricky problem, there is a simple solution.</p>
+
+<h4 id="min-max-buffering">Min-max buffering</h4>
+
+<p>If we store the values observed over the last \(N\) buffers, we can compute the current metric based on the minimum and maximum observed over the past \(N\) metric computations. This results in a situation where the  sensitivity adapts based on the min-max buffer length. A longer min-max buffer will be less responsive to session changes, but also more stable and reflective of the <em>absolute</em> degree of relaxation / fatigue. This can be implemented by keeping a buffer (NumPy array for example) of recent updates and grabbing the min / max over this buffer.</p>
+
+<p>This approach is also nice because it is relative to the specific user and session (though you could argue this is also a drawback). Yay, now that we have a mental state metric, it is time to hand it off to our environment. This can be done in a number of ways including HTTP or sockets.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="k">def</span> <span class="nf">standardize_updates</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">update</span><span class="p">):</span>
+   <span class="s">'''Standardize update based on min-max standardization, 
+   where the min and max are calculated dynamically based on recently seen values'''</span>
+   <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">update</span><span class="p">.</span><span class="n">keys</span><span class="p">():</span>
+      <span class="n">update</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">update</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">-</span> <span class="n">np</span><span class="p">.</span><span class="nb">min</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">rolling_min_maxs</span><span class="p">[</span><span class="n">key</span><span class="p">]))</span> <span class="o">/</span>\
+            <span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="nb">max</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">rolling_min_maxs</span><span class="p">[</span><span class="n">key</span><span class="p">])</span> <span class="o">-</span> <span class="n">np</span><span class="p">.</span><span class="nb">min</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">rolling_min_maxs</span><span class="p">[</span><span class="n">key</span><span class="p">]))</span>
+   
+   <span class="k">return</span> <span class="n">update</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h3 id="testing">Testing</h3>
+
+<p>Before we talk about that though, you may be wondering: does this actually work? I wanted to know the same thing, so set up an ad hoc experiment to test it out. The experiment? Two minutes learning the general theory of relativity, two minutes relaxing with eyes closed. I first fixed the min-max buffer based on a five minute session to allow for a fair scale comparison under the two conditions, and made sure that my Muse headband was on properly. Unfortunately, I only collected data for the alpha and beta protocols.</p>
+
+<p>Here are the results we get:</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0 margin-bottom">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/MUSE-alpha.png" />
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0 margin-bottom">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/MUSE-beta.png" />
+    </div>
+</div>
+
+<p>As you can see, the alpha protocol turned out to work quite nicely, while the beta was less-robust. Clearly, this one session is can’t be used to establish anything conclusively, but it at least gives us some assurance that the general approach works. Now that we have a functional metric, we can move on to creating interactive environments.</p>
+
+<h2 id="the-environment">The environment</h2>
+
+<p>I won’t go into any depth about how to create an environment, that is for your own creativity, but I will show a few examples to get the creative juices flowing. Credit for creating the environmental aspects of these projects goes to the teams I worked with, both of which did a beautiful job creating interactive systems.</p>
+
+<h4 id="breakpoint">Breakpoint:</h4>
+
+<p>Breakpoint is a programming environment that alerts coders when they are too fatigued to productively code using the fatigue protocol discussed above. The idea is that once fatigue values surpass a threshold for long enough, the programmer gets a notification to take a break. There are plenty of bells and whistles here of questionable utility–but they are pretty cool none-the-less. This <a href="https://devpost.com/software/breakpoint">project</a> was a hackathon project completed at the Swiss competition, StartHack.</p>
+
+<figure>
+    <iframe src="https://drive.google.com/file/d/1O7BezuDII7zz-WxmySdFyhCSLGG2dXMX/preview" width="110%" height="450px"></iframe>
+</figure>
+
+<h4 id="zenvironment">Zenvironment:</h4>
+
+<p>Zenvironment pipes the relaxation value calculated from the alpha protocol into a hue lighting system and sound environment, creating surroundings which ebb and flow based on feelings of calmness. This demo also includes a movement component, which is included as a baseline measure to visualize responsiveness. This project was done as part of my capstone course.</p>
+
+<figure>
+    <iframe src="https://drive.google.com/file/d/1Z4kEgxC6jXGfJOYlxh7OeO-3VJ72wgWW/preview" width="110%" height="450px"></iframe>
+</figure>
+
+<p>Interestingly, we can also see a concrete way of mapping the relaxation metric to lighting values based on a nonlinear function. The precise function used is up to you, but one that we found works well is:</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0 margin-bottom">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/lights.png" />
+    </div>
+</div>
+
+<h2 id="wrapping-up">Wrapping up</h2>
+
+<p>That is all, we’ve now built a system that can capture broad user mental states and reflect them in the environment in creative ways. Though this doesn’t include all components of neurofeedback, which typically involves a user leveraging external cues to reach a mental state, it does give a vivid and useful portrait of how a person is feeling. Hopefully now you have the tools to adopt this simple mental state detection process for your next project!</p>
+
+
+  </article>
+
+  
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container">
+    &copy; Copyright 2020 Luke Guerdan.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+    Last updated: September 14, 2020.
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- Load Core and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js" integrity="sha256-OH05DFHUWzr725HmuHo3pnuvUUn+TJuj8/Qz9xytFEw=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.17.0/js/mdb.min.js"  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" integrity="sha256-V8SV2MO1FUb63Bwht5Wx9x6PVHNa02gv8BgH/uH3ung=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js" integrity="sha256-F/Xda58SPdcUCr+xhSGz9MA2zQBPb0ASEYKohl8UCHc=" crossorigin="anonymous"></script>
+<script src="/assets/js/katex.js"></script>
+
+
+
+<!-- Load Mansory & imagesLoaded -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+<!-- Project Cards Layout -->
+<script type="text/javascript">
+  // Init Masonry
+  var $grid = $('.grid').masonry({
+    gutter: 10,
+    horizontalOrder: true,
+    itemSelector: '.grid-item',
+  });
+  // layout Masonry after each image loads
+  $grid.imagesLoaded().progress( function() {
+    $grid.masonry('layout');
+  });
+</script>
+
+
+
+
+
+
+
+</html>
