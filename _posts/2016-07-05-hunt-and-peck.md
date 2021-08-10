@@ -1,9 +1,9 @@
 ---
 layout: post
 title: The Enlightened Hunt-and-Pecker
-description: "It was day one of programming class: enter Vim, the commend-line, C code, and last but not least, hunt-and-peck typing."
+description: ""
 modified: 2016-01-05
-tags: [Data Visualization, Psychology, Learning]
+tags: [Optimized living]
 image:
   feature: bum-master.jpeg
 ---

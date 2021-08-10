@@ -23,13 +23,14 @@ $purple-color:        #B509AC !default;
 $pink-color:          #f92080 !default;
 $pink-color-light:    #ffdddd !default;
 $yellow-color:        #efcc00 !default;
+$off-white-color:     #fff8f2 !default;
 
 $grey-color:          #828282 !default;
 $grey-color-light:    lighten($grey-color, 40%);
 $grey-color-dark:     darken($grey-color, 25%);
 
 /* Set theme colors *************************/
+$theme-base-color:         $off-white-color;
 $theme-color:         $blue-color-dark;
-
 $link-color:          $theme-color;
-$text-color:          #111 !default;
+$text-color:          #555451 !default;

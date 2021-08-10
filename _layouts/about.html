@@ -3,30 +3,36 @@ layout: default
 ---
 
 <div class="post">
-
   <header class="post-header margin-top-extra">
-    {% assign name = site.title | split: ' ' %}
-    {% assign firstname = name | first %}
-    {% if name.size > 2 %}
-       {% assign middlenames =  name | slice:1, name.size-1 | join:" " %}
-    {% else %}
-       {% assign middlenames = '' %}
-    {% endif %}
-    {% assign lastname = name | last %}
-    <a class="navbar-brand title font-weight-lighter name-color" href="{{ site.baseurl | prepend: site.url }}/">
-     <span class="font-weight-bold">{{ firstname }}</span> {{ middlenames }}  {{ lastname }}
-    </a>
   </header>
-
   <article>
     <div class="row">
-      <div class="col">
+      <div class="col info">
+        <p class="name">Hi, I'm Luke!</p>
         {{ content }}
       </div>
         {% if page.profile %}
-        <div class="profile col-4 {% if page.profile.align == 'left' %}order-first{% endif %}">
+        <div class="profile col-md-4 col-10 {% if page.profile.align == 'left' %}order-first{% endif %}">
           {% if page.profile.image %}
-            <img class="img-fluid z-depth-1 rounded" src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}">
+            <img class="propic img-fluid z-depth-1 rounded" src="{{ page.profile.image | prepend: '/assets/img/' | relative_url }}">
+          {% endif %}
+          <!-- Name -->
+          {% assign name = site.title | split: ' ' %}
+          {% assign firstname = name | first %}
+          {% if name.size > 2 %}
+              {% assign middlenames =  name | slice:1, name.size-1 | join:" " %}
+          {% else %}
+              {% assign middlenames = '' %}
+          {% endif %}
+          {% assign lastname = name | last %}
+          <a class="name navbar-brand title font-weight-lighter name-color" href="{{ site.baseurl | prepend: site.url }}/">
+            <span class="font-weight-bold">{{ firstname }}</span> {{ middlenames }}  {{ lastname }}
+          </a>
+          {% if page.social %}
+            <div class="social">
+              {% include social.html %}
+              <div class="contact-note">{{ site.contact_note }}</div>
+            </div>
           {% endif %}
           {% if page.profile.address %}
             <div class="address">
@@ -41,12 +47,14 @@ layout: default
       {% include news.html %}
     {% endif %}
 
-    {% if page.social %}
-    <div class="social">
-      {% include social.html %}
-      <div class="contact-note">{{ site.contact_note }}</div>
-    </div>
-    {% endif %}
-  </article>
+  <div class="publications">
+    {% for p in page.pub_formats %}
+      <h4>{{p}}</h4>
+      <hr>
+      {% bibliography -f papers -q @*[type={{p}}]* %}
+      <br>
+    {% endfor %}
+  </div>
 
+  </article>
 </div>

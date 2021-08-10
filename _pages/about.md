@@ -1,20 +1,22 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 description:
+years: [2019, 2018, 2017, 2016]
+pub_formats: ['Conference Papers', 'Workshops & Preprints']
 
 profile:
-  align: right
-  image: prof_pic.jpg
-  address: 
+  align: left
+  image: LG_website_profile.png
+  address: lguerdan [at] cs.cmu.edu
 
-news: false
+news: true
 social: true
 ---
 
-I am an MPhil student in the [Computer Laboratory](https://www.cst.cam.ac.uk/) at the University of Cambridge, where I study computer science and conduct research under Dr. Hatice Gunes in the [Affective Intelligence and Robotics Lab](https://www.cl.cam.ac.uk/~hg410/people.html). I am broadly interested in research that improves human-machine collaboration through techniques spanning machine learning, human-robot interaction, economics, and cognitive science. 
+I am an incoming PhD student in the [Human-Computer Interaction Institute](https://www.hcii.cmu.edu/) at Carnegie Mellon University. I am interested in combining **human and machine strengths** in **value-aligned systems**, and have the support of an NSF [Graduate Research Fellowship](https://www.nsfgrfp.org/). 
 
-Previously, I graduated from the University of Missouri with degrees in computer science and psychology. While at MU, I worked under Dr. Yi Shang in the [Distributed and Intelligent Computing Lab](http://dslsrv1.rnet.missouri.edu/~shangy/) and co-founded [TigerAware](https://tigeraware.com/), a platform for conducting mobile-based research studies.
+My background is in applied machine learning and cognitive science. I did my Master's (MPhil) at Cambridge, where I worked on decentralized learning paradigms for interaction under [Hatice Gunes](https://www.cl.cam.ac.uk/~hg410/). I also studied Computer Science and Psychology at the University of Missouri, where I worked with [Yi Shang](http://dslsrv1.rnet.missouri.edu/~shangy/) and [Tim Trull](https://psychology.missouri.edu/people/trull), and co-founded [TigerAware](https://tigeraware.com/), a mobile-based research platform.
 
-I hope to begin a PhD program fall of 2021, and am fortunate to have the support of an NSF Graduate Research Fellowship.
+Outside research, I've been building a community co-living house in Pittsburgh and *occasionally* [blogging](https://lukeguerdan.com/blog).

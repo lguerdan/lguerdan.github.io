@@ -33,15 +33,36 @@ a, table.table a {
 
 
 // Profile
-
 .profile {
+    margin-top: 20px;
     .address {
       font-family: monospace;
-      font-size: 1.2rem;
+      font-size: .8rem;
+      text-align: left;
       p {
-        margin: 0;
+        margin-top: 15px;
       }
     }
+}
+
+.affiliation {
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+.info {
+  margin-top: 15px;
+}
+
+.name {
+  font-size: 24px!important;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.propic {
+  width: 90%!important;
 }
 
 
@@ -50,7 +71,16 @@ a, table.table a {
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid $grey-color-light;
-  opacity: 0.95;
+  opacity: .95;
+  background-color: $theme-base-color;
+  color: $grey-color-light;
+  &:hover {
+    color: $theme-color;
+  }
+  .navic {
+    margin-right: 4px;
+  }
+  margin-right: 4px;
 }
 .navbar.navbar-light {
   // Remove link decoration
@@ -130,9 +160,9 @@ a, table.table a {
 
 .social {
   text-align: left;
-  margin-top: 30px;
+  // margin-top: 4px;
   .contact-icon {
-    font-size: 4rem;
+    font-size: 1.3rem;
     a {
       color: $grey-color-dark;
       &:hover {
@@ -143,8 +173,30 @@ a, table.table a {
   .contact-note {
     font-size: 0.8rem;
   }
+  .vline {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
 
+.cv {
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: underline;
+  // margin: 10px;
+  // p {
+  //   margin-top: 20px;
+  // }
+} 
+
+.cv-inline {
+  .a{
+    text-decoration: underline;
+  }
+  font-size: 1.3rem;
+  margin: 10px;
+  text-align: left;
+}
 
 // Footer
 
@@ -157,7 +209,7 @@ footer.fixed-bottom {
     padding-bottom: 8px;
   }
   a {
-    color: white;
+    color: black;
     &:hover {
       color: lighten($theme-color, 25%);
       text-decoration: none;
@@ -167,19 +219,19 @@ footer.fixed-bottom {
 
 footer.sticky-bottom {
   border-top: 1px solid $grey-color-light;
-  padding-top: 40px;
+  padding-top: 10px;
   padding-bottom: 40px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  text-align: center;
 }
-
 
 // Blog
 
 .header-bar {
-  border-bottom: 1px solid $grey-color-light;
+  // border-bottom: 1px solid $grey-color-light;
   text-align: center;
   padding-top: 2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
   h1 {
     color: $theme-color;
     font-size: 5rem;
@@ -247,6 +299,64 @@ footer.sticky-bottom {
   }
 }
 
+.tag-list {
+  text-align: center;
+}
+
+.litl-img {
+  width: 50%;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  border: solid 1px black;
+}
+
+.litl-text {
+  vertical-align: middle;
+  color: black;
+}
+
+.initial {
+  width: 50px;
+}
+
+.tag {
+  // background-color: white;
+  margin: 10px;
+  padding-right: 5px;
+  padding-left: 10px;
+  text-decoration: underline;
+  font-size: 1.4rem;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+
+
+.page-tag {
+  margin: 10px;
+  padding-right: 5px;
+  font-size: 1.4rem;
+  display: inline-block;
+  margin-bottom: 5px;
+  width: 90%;
+  border-bottom: 1px solid $grey-color-dark;
+  height:1.3em;
+}
+
+hr.divider { 
+  margin: 0em;
+  border-width: 2px;
+}
+
+.name {
+  font-size: 10px;
+  font-style: bold;
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
+// .date {
+//   widt
+// }
 
 // Publications
 

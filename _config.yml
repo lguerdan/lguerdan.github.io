@@ -7,8 +7,7 @@ email:
 description: > # this means to ignore newlines until "url:"
   An academic homepage with information about my projects, blog, and publications.
 footer_text: >
-  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with modified <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 
 url:  # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
@@ -36,9 +35,9 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # -----------------------------------------------------------------------------
 
 github_username: # your GitHub user name
-twitter_username: # your Twitter handle
-linkedin_username: # your LinkedIn user name
-scholar_userid: # your Google Scholar ID
+twitter_username: lukeguerdan # your Twitter handle
+linkedin_username: luke-guerdan # your LinkedIn user name
+scholar_userid: XPrjbvoAAAAJ # your Google Scholar ID
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
@@ -47,7 +46,6 @@ research_gate_profile: # your profile on ResearchGate
 blogger_url: # your blogger URL
 
 contact_note: >
-  Feel free to shoot me an email at lguerdan97 [at] gmail [dot] com to get in touch!
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 
@@ -78,10 +76,10 @@ collections:
     output: true
     permalink: /news/:path/
   projects:
-    output: true
+    output: false
     permalink: /projects/:path/
 
-news_limit: 5
+news_limit: 3
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

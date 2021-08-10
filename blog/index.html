@@ -4,7 +4,7 @@ pagination:
   enabled: true
   collection: posts
   permalink: /page/:num/
-  per_page: 3
+  per_page: 6
   sort_field: date
   sort_reverse: true
   trail:
@@ -15,20 +15,38 @@ pagination:
 <div class="post">
 
   <div class="header-bar">
-    <h2>{{ site.blog_name }}</h2>
-    <h2>{{ site.blog_description }}</h2>
+    <img class='litl-img' src="{{ 'assets/img/litl.png'  | relative_url }}"></img>
+    <h2 class='litl-text'>Luke in the <img class='initial' src="{{ 'assets/img/L_initial_trans.png'  | relative_url }}"></img>oop</h2>
   </div>
 
-
-  <ul class="post-list">
-    {% for post in paginator.posts %}
-      <li>
-        <h3><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-        <p class="post-meta">{{ post.date | date: '%B %-d, %Y' }}</p>
-        <p>{{ post.description }}</p>
-      </li>
+  <div class="tag-list">
+    {% for tag in site.tags reversed %}
+      {% assign t = tag | first %}
+      {% assign posts = tag | last %}
+      <p class='tag'><a href="#{{t | slugify}}">{{t}}</a><span>
     {% endfor %}
+  </div>
+
+  <br>
+  <br>
+  <br>
+  {% for tag in site.tags reversed %}
+  {% assign t = tag | first %}
+  {% assign posts = tag | last %}
+  <div id="{{t | slugify}}" class='page-tag'>{{t}}</div>
+  <ul>
+  {%  for post in paginator.posts %}
+    {% if post.tags contains t %}
+    <li>
+      <h3><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+      <p class="post-meta">{{ post.date | date: '%B %-d, %Y' }}</p>
+      <p>{{ post.description }}</p>
+    </li>
+    {% endif %}
+  {% endfor %}
+  <br>
   </ul>
+  {% endfor %}
 
   {% include pagination.html %}
 

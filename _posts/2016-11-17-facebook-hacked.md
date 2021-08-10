@@ -1,9 +1,9 @@
 ---
 layout: post
-title: How Facebook Hacked Us — the Mental Mechanics of The Internet
-description: "Thanksgiving dinner this year was all too quiet. Not because the food was good, but because we sat on our phones — brow furrowed — trying to defuse Aunt Mildred’s latest wine-induced Facebook comment rampage."
+title: How Facebook Hacked Us — the Mental Mechanics of Trumpism
+description: ""
 modified: 2016-11-07
-tags: [Social Media, News, 2016 Election, Psychology, Facebook]
+tags: [Life with computers]
 image:
   feature: fhu-banner.jpeg
 ---

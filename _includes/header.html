@@ -1,9 +1,9 @@
 <header>
 
     <!-- Nav Bar -->
-    <nav id="navbar" class="navbar navbar-light bg-white navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}">
     <div class="container">
-      {% if page.title != "about" %}
+      {% if page.title != "About" %}
       {% assign name = site.title | split: ' ' %}
       {% assign firstname = name | first %}
       {% if name.size > 2 %}
@@ -12,8 +12,11 @@
          {% assign middlenames = '' %}
       {% endif %}
       {% assign lastname = name | last %}
-      <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl | prepend: site.url }}/">
+      <br>
+      <a class="{% unless page.url contains 'blog' %}name{% endunless %} navbar-brand title font-weight-lighter" href="{{ site.baseurl | prepend: site.url }}/">
+        {% if page.title != "About" %}
        <span class="font-weight-bold">{{ firstname }}</span> {{ middlenames }}  {{ lastname }}
+       {% endif %}
       </a>
       {% elsif site.show_social_icons %}
         <!-- Social Icons -->
@@ -33,7 +36,7 @@
           <!-- About -->
           <li class="nav-item {% if page.title == 'about' %}active{% endif %}">
             <a class="nav-link" href="{{ '/' | relative_url }}">
-              about
+              <i class="navic far fa-address-card"></i>About
               {% if page.title == "about" %}
                 <span class="sr-only">(current)</span>
               {% endif %}
@@ -43,7 +46,7 @@
           <!-- Blog -->
           <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
             <a class="nav-link" href="{{ '/blog/' | relative_url }}">
-              blog
+              <i class="navic fas fa-paragraph"></i>Blog
               {% if page.title == "blog" %}
               <span class="sr-only">(current)</span>
               {% endif %}
@@ -51,7 +54,7 @@
           </li>
           {% endif %}
           <!-- Other pages -->
-          {% assign sorted_pages = site.pages | sort: "title" %}
+          <!-- {% assign sorted_pages = site.pages | sort: "title" %}
           {% for p in sorted_pages %}
           {% if p.nav and p.autogen == nil %}
           <li class="nav-item {% if page.title == p.title %}active{% endif %}">
@@ -63,12 +66,12 @@
               </a>
           </li>
           {% endif %}
-          {% endfor %}
+          {% endfor %} -->
           <li class="nav-item">
             <a class="nav-link" href="{{ '/assets/pdf/LukeGuerdanCV.pdf' }}" target="_">
-              CV
+              <i class="navic fas fa-scroll"></i>CV
             </a>
-        </li>
+          </li>
         </ul>
       </div>
     </div>

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: The Bum Master - Experiments in Agile Living
-description: "This is my foray into the world of optimized self improvement — a glimpse of what happens when agile software methodology meets an old New Year’s resolution gone too far."
+description: ""
 modified: 2016-01-01
-tags: [Agile, Scrum, Experiments]
+tags: [Optimized living]
 image:
   feature: bum-master.jpeg
 ---

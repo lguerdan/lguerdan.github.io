@@ -5,6 +5,7 @@
  body {
    padding-bottom: 70px;
    color: $text-color;
+   background-color: $theme-base-color;
  }
 
  body.fixed-top-nav {
@@ -50,12 +51,6 @@
   margin-top: 25px!important;
 }
 
-::selection {
-  background: #ffb7b7; /* WebKit/Blink Browsers */
-}
-::-moz-selection {
-  background: #ffb7b7; /* Gecko Browsers */
-}
 
 
 // TODO: redefine content layout.

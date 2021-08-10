@@ -1,9 +1,9 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 description: A collection of my personal and research projects. See /blog and /publications for projects not mentioned here
-nav: true
+nav: false
 ---
 
 <div class="projects grid">
