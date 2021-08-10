@@ -1,7 +1,7 @@
 /******************************************************************************* Variables used throughout the theme. To adjust anything, simply edit the variables below and rebuild the theme. *****************************************************************************/
 /* Set theme colors *************************/
 /****************************************************************************** Content *****************************************************************************/
-body { padding-bottom: 70px; color: #111; }
+body { padding-bottom: 70px; color: #555451; background-color: #fff8f2; }
 
 body.fixed-top-nav { padding-top: 56px; }
 
@@ -21,10 +21,6 @@ body.sticky-bottom-footer { padding-bottom: 0; }
 
 .about-header { margin-top: 25px !important; }
 
-::selection { background: #ffb7b7; /* WebKit/Blink Browsers */ }
-
-::-moz-selection { background: #ffb7b7; /* Gecko Browsers */ }
-
 /****************************************************************************** Publications *****************************************************************************/
 /*****************************************************************************
 * Projects
@@ -38,10 +34,21 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 
 .caption { font-size: 0.875rem; margin-top: 0.75rem; margin-bottom: 1.5rem; text-align: center; }
 
-.profile .address { font-family: monospace; font-size: 1.2rem; }
-.profile .address p { margin: 0; }
+.profile { margin-top: 20px; }
+.profile .address { font-family: monospace; font-size: .8rem; text-align: left; }
+.profile .address p { margin-top: 15px; }
 
-.navbar { box-shadow: none; border-bottom: 1px solid #e8e8e8; opacity: 0.95; }
+.affiliation { font-size: 14px; margin-bottom: 7px; }
+
+.info { margin-top: 15px; }
+
+.name { font-size: 24px !important; margin-top: 10px; margin-bottom: 0px; padding-bottom: 0px; }
+
+.propic { width: 90% !important; }
+
+.navbar { box-shadow: none; border-bottom: 1px solid #e8e8e8; opacity: .95; background-color: #fff8f2; color: #e8e8e8; margin-right: 4px; }
+.navbar:hover { color: #00369f; }
+.navbar .navic { margin-right: 4px; }
 
 .navbar.navbar-light a:hover { text-decoration: none; }
 .navbar.navbar-light .navbar-nav .nav-item .nav-link:hover { color: #00369f; }
@@ -62,20 +69,26 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 
 .news table td { font-size: 1rem; }
 
-.social { text-align: left; margin-top: 30px; }
-.social .contact-icon { font-size: 4rem; }
+.social { text-align: left; }
+.social .contact-icon { font-size: 1.3rem; }
 .social .contact-icon a { color: #424242; }
 .social .contact-icon a:hover { color: #00369f; }
 .social .contact-note { font-size: 0.8rem; }
+.social .vline { margin-left: 5px; margin-right: 5px; }
+
+.cv { font-size: 1.2rem; text-align: center; text-decoration: underline; }
+
+.cv-inline { font-size: 1.3rem; margin: 10px; text-align: left; }
+.cv-inline .a { text-decoration: underline; }
 
 footer.fixed-bottom { color: #c2c2c2; background-color: #424242; font-size: 0.75rem; }
 footer.fixed-bottom .container { padding-top: 9px; padding-bottom: 8px; }
-footer.fixed-bottom a { color: white; }
+footer.fixed-bottom a { color: black; }
 footer.fixed-bottom a:hover { color: #206bff; text-decoration: none; }
 
-footer.sticky-bottom { border-top: 1px solid #e8e8e8; padding-top: 40px; padding-bottom: 40px; font-size: 0.9rem; }
+footer.sticky-bottom { border-top: 1px solid #e8e8e8; padding-top: 10px; padding-bottom: 40px; font-size: 0.8rem; text-align: center; }
 
-.header-bar { border-bottom: 1px solid #e8e8e8; text-align: center; padding-top: 2rem; padding-bottom: 5rem; }
+.header-bar { text-align: center; padding-top: 2rem; padding-bottom: 2rem; }
 .header-bar h1 { color: #00369f; font-size: 5rem; }
 
 .post-list { margin: 0; margin-bottom: 40px; padding: 0; }
@@ -93,6 +106,22 @@ footer.sticky-bottom { border-top: 1px solid #e8e8e8; padding-top: 40px; padding
 .projects .grid-item a { color: black; text-decoration: none; }
 .projects .grid-item a:hover { color: #00369f; }
 .projects .card img { width: 100%; }
+
+.tag-list { text-align: center; }
+
+.litl-img { width: 50%; border-radius: 25px; margin-bottom: 25px; border: solid 1px black; }
+
+.litl-text { vertical-align: middle; color: black; }
+
+.initial { width: 50px; }
+
+.tag { margin: 10px; padding-right: 5px; padding-left: 10px; text-decoration: underline; font-size: 1.4rem; display: inline-block; margin-bottom: 0px; }
+
+.page-tag { margin: 10px; padding-right: 5px; font-size: 1.4rem; display: inline-block; margin-bottom: 5px; width: 90%; border-bottom: 1px solid #424242; height: 1.3em; }
+
+hr.divider { margin: 0em; border-width: 2px; }
+
+.name { font-size: 10px; font-style: bold; margin-bottom: 5px; margin-top: 0px; }
 
 .publications { margin-top: 2rem; }
 .publications h2.year { color: #e8e8e8; border-top: 1px solid #e8e8e8; padding-top: 1rem; margin-top: 2rem; margin-bottom: -2rem; text-align: right; }
