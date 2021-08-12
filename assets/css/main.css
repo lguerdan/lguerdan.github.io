@@ -3,6 +3,8 @@
 /****************************************************************************** Content *****************************************************************************/
 body { padding-bottom: 70px; color: #555451; background-color: #fff8f2; }
 
+.pad-top { margin-top: 25px; }
+
 body.fixed-top-nav { padding-top: 56px; }
 
 body.sticky-bottom-footer { padding-bottom: 0; }
