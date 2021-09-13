@@ -25,7 +25,7 @@ layout: default
               {% assign middlenames = '' %}
           {% endif %}
           {% assign lastname = name | last %}
-          <a class="name navbar-brand title font-weight-lighter name-color" href="{{ site.baseurl | prepend: site.url }}/">
+          <a class="name navbar-brand title font-weight-lighter name-color" href="{{ site.baseurl }}/">
             <span class="font-weight-bold">{{ firstname }}</span> {{ middlenames }}  {{ lastname }}
           </a>
           {% if page.social %}
