@@ -13,7 +13,7 @@
       {% endif %}
       {% assign lastname = name | last %}
       <br>
-      <a class="{% unless page.url contains 'blog' %}name{% endunless %} navbar-brand title font-weight-lighter" href="{{ site.baseurl | prepend: site.url }}/">
+      <a class="{% unless page.url contains 'blog' %}name{% endunless %} navbar-brand title font-weight-lighter" href="https://lukeguerdan.com">
         {% if page.title != "About" %}
        <span class="font-weight-bold">{{ firstname }}</span> {{ middlenames }}  {{ lastname }}
        {% endif %}
