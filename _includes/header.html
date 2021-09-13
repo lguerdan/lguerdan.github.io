@@ -13,11 +13,11 @@
       {% endif %}
       {% assign lastname = name | last %}
       <br>
-      <!-- <a class="{% unless page.url contains 'blog' %}name{% endunless %} navbar-brand title font-weight-lighter" href="https://lukeguerdan.com"> -->
-        <!-- {% if page.title != "About" %}
-       <span class="font-weight-bold">{{ firstname }}</span> {{ middlenames }}  {{ lastname }}
-       {% endif %} -->
-      <!-- </a> -->
+      <a class="{% unless page.url contains 'blog' %}name{% endunless %} navbar-brand title font-weight-lighter" href="https://lukeguerdan.com">
+        {% if page.title != "About" %}
+        <span class="font-weight-bold">{{ firstname }}</span> {{ middlenames }}  {{ lastname }}
+        {% endif %}
+      </a> 
       {% elsif site.show_social_icons %}
         <!-- Social Icons -->
         <div class="row ml-1 ml-sm-0">
