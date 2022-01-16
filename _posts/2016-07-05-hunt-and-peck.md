@@ -3,7 +3,7 @@ layout: post
 title: The Enlightened Hunt-and-Pecker
 description: ""
 modified: 2016-01-05
-tags: [Optimized living]
+tags: [Life]
 image:
   feature: bum-master.jpeg
 ---

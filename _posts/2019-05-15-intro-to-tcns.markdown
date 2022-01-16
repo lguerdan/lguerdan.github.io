@@ -3,7 +3,7 @@ layout: post
 title: Diving Into Temporal Convolutional Networks
 description: ""
 modified: 2019-05-15
-tags: [Technical]
+tags: [Research]
 --- 
 
 One important area of neural network applications is sequence modeling, or the process of capturing temporal structures in data for purposes of time series prediction, classification, and generation. Sequence modeling spans tasks such as speech recognition, sentiment classification, and machine translation. We usually equate sequence modeling with recurrent models–specifically recurrent neural networks such as Long Short Term Memory Networks (LSTMs) or Gated Recurrent Units (GRUs). The textbook used in my Neural Nets course even titles the chapter on sequence modeling “Sequence Modeling: Recurrent and Recursive Nets”. 

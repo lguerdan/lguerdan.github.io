@@ -3,7 +3,7 @@ layout: post
 title: The Bum Master - Experiments in Agile Living
 description: ""
 modified: 2016-01-01
-tags: [Optimized living]
+tags: [Life]
 image:
   feature: bum-master.jpeg
 ---

@@ -3,7 +3,7 @@ layout: post
 title: How Facebook Hacked Us — the Mental Mechanics of Trumpism
 description: ""
 modified: 2016-11-07
-tags: [Life with computers]
+tags: [Life]
 image:
   feature: fhu-banner.jpeg
 ---

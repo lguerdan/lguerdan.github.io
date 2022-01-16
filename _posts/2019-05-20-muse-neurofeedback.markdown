@@ -3,7 +3,7 @@ layout: post
 title: How to Decode Mental States With a Commercial EEG Headband
 description: ""
 modified: 2019-05-20
-tags: [Technical]
+tags: [Research]
 --- 
 
 Wearable devices are becoming more and more common, giving us access to an unprecedented amount of real-time physiological data. These wearables are useful for tracking things like activity levels and exercise, but we can also use them for much more powerful applications. 
