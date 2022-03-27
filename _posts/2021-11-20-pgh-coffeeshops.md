@@ -21,7 +21,7 @@ I'm not a huge fan of the coffee here, but the staff is normally friendly. Becau
 - Atmosphere: 🌊 🌊 🌊
 - Work environment: 💻 💻 💻 💻 💻 
 - Outlets: 🔌 🔌 🔌 🔌 
-- Internet: 🌐 🌐 🌐 🌐  36.98Mbps up / 123.51 Mbps / down (two visit average)
+- Internet: 🌐 🌐 🌐 🌐  36.98 Mbps up / 123.51 Mbps / down (two visit average)
 
 <!-- [34.63, 39.34 : 127.23, 119.79] [up/down] -->
 
@@ -54,5 +54,5 @@ This coffee shop has a great atmosphere, with a large wood table set up for work
 - Atmosphere: 🌊 🌊 🌊 🌊 🌊
 - Work environment: 💻 💻 💻
 - Outlets: 🔌  🔌
-- Internet: 🌐  1.22 Mbps up / 0.40 Mbps down (1 visit average) I also need to hot spot frequently. 
+- Internet: 🌐  1.22 Mbps up / 0.40 Mbps down (1 visit average) I also need to hotspot frequently. 
 
