@@ -25,5 +25,10 @@ Running list of resources about applying for and completing a PhD.
     - Managers as input/output machines
     - Daily progress tracking
 
+
+# Finding research internships
+- [Twitter thread on computational research internship CVs](https://twitter.com/merrierm/status/1486410348794023936?s=21)
+
+
 # CV examples
 - http://sdflem.github.io/scott-cv.pdf
