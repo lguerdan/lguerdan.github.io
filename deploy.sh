@@ -1,3 +1,4 @@
+bundle exec jekyll build
 rm -rf ../build
 mkdir ../build
 cp -r _site/* ../build/
