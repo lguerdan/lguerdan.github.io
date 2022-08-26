@@ -15,7 +15,7 @@ news: true
 social: true
 ---
 
-I am a first-year PhD student in the [Human-Computer Interaction Institute (HCII)](https://www.hcii.cmu.edu/) within the [School of Computer Science](https://www.cs.cmu.edu/) at [Carnegie Mellon University](https://www.cmu.edu/), and am advised by [Steven Wu](https://zstevenwu.com/) and [Ken Holstein](https://kenholstein.myportfolio.com/). 
+I am a second-year PhD student in the [Human-Computer Interaction Institute (HCII)](https://www.hcii.cmu.edu/) within the [School of Computer Science](https://www.cs.cmu.edu/) at [Carnegie Mellon University](https://www.cmu.edu/), and am advised by [Steven Wu](https://zstevenwu.com/) and [Ken Holstein](https://kenholstein.myportfolio.com/). 
 
 My work is in human-centered machine learning. In particular, I aim to create systems that augment human abilities (human-AI complementarity), while also fostering partnerships that are transparent, fair, and aligned with stakeholder values. My research is generously supported by an NSF [Graduate Research Fellowship](https://www.nsfgrfp.org/). 
 

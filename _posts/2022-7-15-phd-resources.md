@@ -26,6 +26,9 @@ tags: [Life]
     - Managers as input/output machines
     - Daily progress tracking
 
+## Doing research:
+- [Coming up with research ideas](https://medium.com/@marcotcr/coming-up-with-research-ideas-3032682e5852)
+- [Working with an advisor](https://twitter.com/jbhuang0604/status/1546361365778022400?s=20&t=MFGoTUeIh01X99F4_kop2w)
 
 ## Finding research internships
 - [Twitter thread on computational research internship CVs](https://twitter.com/merrierm/status/1486410348794023936?s=21)
