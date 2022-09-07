@@ -25,6 +25,7 @@ tags: [Life]
     - Slides versus speaker
     - Managers as input/output machines
     - Daily progress tracking
+- Jia-Bin Huang's [curated list of Awesome Tips](https://github.com/jbhuang0604/awesome-tips). Covers research, writing, presentations, and communication, and more
 
 ## Doing research:
 - [Coming up with research ideas](https://medium.com/@marcotcr/coming-up-with-research-ideas-3032682e5852)
