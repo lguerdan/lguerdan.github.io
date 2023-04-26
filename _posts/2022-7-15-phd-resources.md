@@ -8,6 +8,10 @@ tags: [Life]
 
 <!-- # Applying -->
 
+## Important Decisions
+- [How to Choose Your Grad School](https://timdettmers.com/2022/03/13/how-to-choose-your-grad-school/)
+
+
 ## Inspiring Talks
 - [Hamming, "You and Your Research" (June 6, 1995)](https://www.youtube.com/watch?v=a1zDuOPkMSw&ab_channel=securitylectures)
 - [Randy Pausch Last Lecture: Achieving Your Childhood Dreams](https://www.youtube.com/watch?v=ji5_MqicxSo&ab_channel=CarnegieMellonUniversity)
