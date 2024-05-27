@@ -42,12 +42,12 @@
         {% endfor %}
       </span>
 
-      <span class="periodical">
+      <span class="periodical" style="white-space:nowrap;">
       <em>{{entry.journal}}</em>, {{entry.year}}
       </span>
     {% endif %}
 
-    <span class="links">
+    <span class="links" style="white-space:nowrap;">
     {% if entry.abstract %}
       [<a class="abstract">Abs</a>]
     {% endif %}
@@ -75,6 +75,13 @@
     {% if entry.code %}
       [<a href="{{ entry.code }}" target="_blank">Code</a>]
     {% endif %}
+    {% if entry.best_paper %}
+      &nbsp;<a style="color:red;pointer-events:none;cursor:default;">Best Paper Award</a>
+    {% endif %}
+    {% if entry.spotlight_talk %}
+    &nbsp;<a style="color:red;pointer-events:none;cursor:default;">Spotlight Talk</a>
+  {% endif %}
+
     </span>
 
     <!-- Hidden abstract block -->

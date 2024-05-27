@@ -4,7 +4,7 @@ title: About
 permalink: /
 description:
 years: [2019, 2018, 2017, 2016]
-pub_formats: ['Conference Papers', 'Workshops & Preprints']
+pub_formats: ['Selected Work']
 
 profile:
   align: left
