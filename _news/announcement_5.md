@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2023-06-30 15:59:00-0400
+date: 2024-2-28 15:59:00-0400
 inline: true
 ---
 
-Our work [Counterfactual Prediction Under Outcome Measurement Error](https://arxiv.org/abs/2302.11121) won a Best Paper Award at FAccT 23'.
+I gave a talk ["Human-Algorithm Decision-Making Under Imperfect Proxy Labels"](https://www.youtube.com/watch?v=7jXI1njRhhY&ab_channel=ComplexityScienceHub) at the [2024 Lecture Series on Network Inequality](https://networkinequality.com/lecture-series/) at CSH Vienna. 

@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2023-12-13 15:59:00-0400
+date: 2024-5-1 15:59:00-0400
 inline: true
 ---
 
-I will present ongoing work at the [NeurIPS Regulatable ML Workshop](https://regulatableml.github.io/) on Saturday December 16th. 
+New work on [Predictive Performance Comparison of Decision Policies Under Confounding](https://arxiv.org/abs/2404.00848) accepted at ICML 2024. 

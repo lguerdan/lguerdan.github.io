@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2023-04-25 15:59:00-0400
+date: 2023-06-30 15:59:00-0400
 inline: true
 ---
 
-Two papers accepted at FAccT 23'.
+Our work [Counterfactual Prediction Under Outcome Measurement Error](https://arxiv.org/abs/2302.11121) won a Best Paper Award at FAccT 23'.
