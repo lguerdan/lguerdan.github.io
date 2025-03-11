@@ -15,13 +15,10 @@ news: true
 social: true
 ---
 
-I am a Ph.D. student in the [Human-Computer Interaction Institute (HCII)](https://www.hcii.cmu.edu/) within the School of Computer Science at Carnegie Mellon University. I am fortunate to be advised by [Steven Wu](https://zstevenwu.com/) and [Ken Holstein](https://kenholstein.myportfolio.com/). 
+I am a Ph.D. student in the [Human--Computer Interaction Institute (HCII)](https://www.hcii.cmu.edu/) within the School of Computer Science at Carnegie Mellon University. I am fortunate to be advised by [Ken Holstein](https://kenholstein.myportfolio.com/) and [Steven Wu](https://zstevenwu.com/). 
 
-**I develop statistical tools for measuring the capabilities and limitations of algorithmic systems.** I am especially interested in developing practical methods for addressing sociotechnical evaluation challenges --- e.g., related to imperfect "ground truth" labels and unobserved contextual information. My work is generously supported by an [NSF Graduate Research Fellowship](https://www.nsfgrfp.org/) and the [Center for Advancing Safety of Machine Intelligence (CASMI)](https://casmi.northwestern.edu/).
+**I develop methods for measuring the capabilities, risks, and limitations of AI systems.** I study statistical approaches for evaluating AI systems themselves, as well as frameworks for understanding the broader sociotechnical context in which AI systems operate and interact with humans. My work bridges ideas from ML, Statistics, Human--Computer Interaction, and the Quantitative Social Sciences to advance an emerging interdisciplinary science of AI evaluation. 
 
-Previously, I completed my Master's in Computer Science at Cambridge. I also studied Computer Science and Psychology at the University of Missouri, where I co-founded [TigerAware](https://tigeraware.com/), a mobile research platform.
+My work is generously supported by an [NSF Graduate Research Fellowship](https://www.nsfgrfp.org/), the [Center for Advancing Safety of Machine Intelligence](https://casmi.northwestern.edu/), and the [National Institute for Standards and Technology (NIST)](https://casmi.northwestern.edu/).
 
----
-**Research Keywords:** Sociotechnical Evaluation, Measurement, Validity, Uncertainty Quantification, Human-Algorithm Decision-Making.
 
----
