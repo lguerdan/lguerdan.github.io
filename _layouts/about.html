@@ -49,6 +49,7 @@ layout: default
   <div class="publications">
     {% for p in page.pub_formats %}
       <h4>{{p}}</h4>
+      (*) Co-first Author; (**) Co-senior Author
       <hr>
       {% bibliography -f papers -q @*[type={{p}}]* %}
       <br>
