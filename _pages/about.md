@@ -9,16 +9,12 @@ pub_formats: ['Selected Work']
 profile:
   align: left
   image: propic.jpeg
-  address: lguerdan [at] cs.cmu.edu
+  address: lukemguerdan[at]gmail[dot]com
 
 news: true
 social: true
 ---
 
-I am a Ph.D. student in the [Human--Computer Interaction Institute (HCII)](https://www.hcii.cmu.edu/) within the School of Computer Science at Carnegie Mellon University. I am fortunate to be advised by [Ken Holstein](https://kenholstein.myportfolio.com/) and [Steven Wu](https://zstevenwu.com/). 
+I am an AI Research Engineer at [Duolingo](https://www.duolingo.com/), where I advance evaluation science and infrastructure for AI-enabled learning experiences. In August 2026, I graduated with my Ph.D. from the School of Computer Science at Carnegie Mellon University. There, I was extremely fortunate to be advised by [Ken Holstein](https://kenholstein.myportfolio.com/) and [Steven Wu](https://zstevenwu.com/).
 
-**I develop tools for measuring the capabilities, risks, and limitations of AI systems.** I study statistical approaches for evaluating AI systems themselves, as well as frameworks for understanding the broader sociotechnical context in which humans operate and interact with AI systems. My work bridges ideas from ML, Statistics, Human--Computer Interaction, and the Quantitative Social Sciences to advance an emerging interdisciplinary science of AI evaluation. 
-
-My work is generously supported by an [NSF Graduate Research Fellowship](https://www.nsfgrfp.org/), the [Center for Advancing Safety of Machine Intelligence](https://casmi.northwestern.edu/), and the [National Institute for Standards and Technology (NIST)](https://casmi.northwestern.edu/).
-
-
+I design tools and frameworks for translating diverse forms of human expertise into rigorous, scalable AI evaluations. I leverage these evaluations to inform decisions about when and how AI systems should be deployed, and to shape their behavior through post-training.

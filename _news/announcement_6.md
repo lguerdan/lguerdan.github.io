@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2024-5-1 15:59:00-0400
+date: 2026-08-01 15:59:00-0400
 inline: true
 ---
 
-New work on [Predictive Performance Comparison of Decision Policies Under Confounding](https://arxiv.org/abs/2404.00848) accepted at ICML 2024. 
+I defended my [PhD dissertation](http://reports-archive.adm.cs.cmu.edu/anon/anon/usr0/ftp/home/ftp/hcii/CMU-HCII-26-108.pdf) and joined Duolingo as an AI Research Engineer in NYC!
